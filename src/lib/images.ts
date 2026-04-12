@@ -3,6 +3,7 @@ import path from "path";
 
 const IMAGES_DIR = path.join(process.cwd(), "public/images");
 const VALID_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".avif"];
+const BASE_PATH = "/sitetuka";
 
 export interface ImageFile {
   src: string;
@@ -25,7 +26,7 @@ export function getImagesByCategory(category: string): ImageFile[] {
     })
     .sort()
     .map((filename) => ({
-      src: `/images/${category}/${filename}`,
+      src: `${BASE_PATH}/images/${category}/${filename}`,
       alt: filename.replace(/\.[^.]+$/, "").replace(/[-_]/g, " "),
       filename,
     }));

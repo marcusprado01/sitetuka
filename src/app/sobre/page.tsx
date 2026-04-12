@@ -13,7 +13,7 @@ export default function SobrePage() {
         <div className="w-full md:w-2/5 flex-shrink-0">
           <div className="overflow-hidden rounded-sm">
             <Image
-              src="/images/profile.jpg"
+              src="/sitetuka/images/profile.jpg"
               alt="Iman Abou Tuka"
               width={500}
               height={625}
