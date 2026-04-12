@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import type { ImageFile } from "@/lib/images";
 
 interface ImageGridProps {
@@ -21,14 +21,23 @@ export function ImageGrid({ images }: ImageGridProps) {
     setSelectedIndex(selectedIndex < images.length - 1 ? selectedIndex + 1 : 0);
   }, [selectedIndex, images.length]);
 
-  const handleKeyDown = useCallback(
-    (e: React.KeyboardEvent) => {
+  useEffect(() => {
+    if (selectedIndex === null) return;
+
+    function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") setSelectedIndex(null);
       if (e.key === "ArrowLeft") handlePrev();
       if (e.key === "ArrowRight") handleNext();
-    },
-    [handlePrev, handleNext]
-  );
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [selectedIndex, handlePrev, handleNext]);
 
   if (images.length === 0) {
     return (
@@ -67,23 +76,21 @@ export function ImageGrid({ images }: ImageGridProps) {
         <div
           className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center cursor-zoom-out"
           onClick={() => setSelectedIndex(null)}
-          onKeyDown={handleKeyDown}
           role="dialog"
           aria-modal="true"
           aria-label="Image viewer"
-          tabIndex={0}
         >
           {/* Close */}
           <button
             onClick={() => setSelectedIndex(null)}
-            className="absolute top-6 right-6 text-white/40 hover:text-white text-2xl transition-colors z-10"
+            className="absolute top-4 right-4 md:top-6 md:right-6 w-12 h-12 flex items-center justify-center text-white/40 hover:text-white text-2xl transition-colors z-10"
             aria-label="Close"
           >
             &times;
           </button>
 
           {/* Counter */}
-          <span className="absolute top-6 left-6 text-xs tracking-[0.2em] text-white/30">
+          <span className="absolute top-4 left-4 md:top-6 md:left-6 text-xs tracking-[0.2em] text-white/30 h-12 flex items-center">
             {(selectedIndex ?? 0) + 1} / {images.length}
           </span>
 
@@ -93,7 +100,7 @@ export function ImageGrid({ images }: ImageGridProps) {
               e.stopPropagation();
               handlePrev();
             }}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/30 hover:text-white text-3xl transition-colors z-10"
+            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-white/30 hover:text-white text-3xl transition-colors z-10 rounded-full active:bg-white/10"
             aria-label="Previous image"
           >
             &#8249;
@@ -105,8 +112,8 @@ export function ImageGrid({ images }: ImageGridProps) {
             alt={selectedImage.alt}
             width={1600}
             height={1200}
-            className="max-h-[85vh] max-w-[85vw] object-contain"
-            sizes="85vw"
+            className="max-h-[90vh] max-w-[calc(100vw-6rem)] md:max-w-[85vw] object-contain"
+            sizes="90vw"
             priority
             onClick={(e) => e.stopPropagation()}
           />
@@ -117,7 +124,7 @@ export function ImageGrid({ images }: ImageGridProps) {
               e.stopPropagation();
               handleNext();
             }}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/30 hover:text-white text-3xl transition-colors z-10"
+            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-white/30 hover:text-white text-3xl transition-colors z-10 rounded-full active:bg-white/10"
             aria-label="Next image"
           >
             &#8250;

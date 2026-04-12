@@ -18,6 +18,7 @@ export default function SobrePage() {
               width={500}
               height={625}
               className="object-cover w-full"
+              sizes="(max-width: 768px) 100vw, 40vw"
               priority
             />
           </div>

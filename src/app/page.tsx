@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       {/* Hero — Full Screen */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative min-h-screen h-[100dvh] w-full overflow-hidden">
         <Image
           src="/sitetuka/images/hero.jpg"
           alt="Architecture photography by Iman Abou Tuka"
@@ -61,6 +61,7 @@ export default function Home() {
                 width={400}
                 height={500}
                 className="object-cover w-full"
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
