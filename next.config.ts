@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   basePath: "/sitetuka",
   images: {
     unoptimized: true,
+    qualities: [75, 90],
   },
 };
 

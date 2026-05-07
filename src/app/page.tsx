@@ -19,8 +19,8 @@ export default function Home() {
       {/* Hero — Full Screen */}
       <section className="relative min-h-screen h-[100dvh] w-full overflow-hidden">
         <Image
-          src="/sitetuka/images/hero.jpg"
-          alt="Architecture photography by Iman Abou Tuka"
+          src="/sitetuka/images/hero.png"
+          alt="Architecture photography by Iman Abou Mahmoud"
           fill
           className="object-cover"
           priority
@@ -32,7 +32,7 @@ export default function Home() {
             Architecture &middot; Photography &middot; Design
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white tracking-tight leading-tight mb-6 drop-shadow-lg">
-            Iman Abou Tuka
+            Iman Abou Mahmoud
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-xl leading-relaxed font-light">
             Multidisciplinary creative based in Australia, exploring the
@@ -57,7 +57,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-sm">
               <Image
                 src="/sitetuka/images/profile.jpg"
-                alt="Iman Abou Tuka"
+                alt="Iman Abou Mahmoud"
                 width={400}
                 height={500}
                 className="object-cover w-full"
@@ -81,10 +81,12 @@ export default function Home() {
                 architecture and natural environments.
               </p>
               <p>
-                From the dense urban fabric of São Paulo to the coastal landscapes
-                of the North Coast, and through experiences in Melbourne, regional
-                New South Wales, and Japan — each context has enriched my
-                understanding of how people inhabit and relate to space.
+                From the dense urban fabric of São Paulo to the Brazilian
+                coastline between Bahia and São Paulo, and through living in
+                Melbourne (Victoria) and travelling across regional New South
+                Wales, the West Coast of Australia, and Japan — each context has
+                enriched my understanding of how people inhabit and relate to
+                space.
               </p>
             </div>
             <Link

@@ -10,8 +10,8 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Iman Abou Tuka — Architecture, Photography & Design",
-  description: "Multidisciplinary portfolio by Iman Abou Tuka — Architecture, Photography, Construction Coordination & Handmade Design. Based in Australia.",
+  title: "Iman Abou Mahmoud — Architecture, Photography & Design",
+  description: "Multidisciplinary portfolio by Iman Abou Mahmoud — Architecture, Photography, Construction Coordination & Handmade Design. Based in Australia.",
 };
 
 export default function RootLayout({

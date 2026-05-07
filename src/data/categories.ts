@@ -12,9 +12,9 @@ export const categories: CategoryConfig[] = [
     title: "Photography",
     subtitle: "Architecture & Landscape",
     description:
-      "Architecture, urban and natural landscapes — São Paulo, North Coast, Australia and Japan",
+      "Architecture, urban and natural landscapes — Brazil (Bahia to São Paulo), Australia (Victoria, Melbourne and the West Coast) and Japan",
     narrative:
-      "This photographic portfolio presents a selection of original images produced across different geographical and cultural contexts. A significant portion focuses on architectural photography captured in São Paulo — exploring the relationship between buildings, structure, scale, and geometry. The compositions emphasize verticality, repetition, and the visual rhythm created by the interaction between architecture and light. Additional work includes photographs from the North Coast of São Paulo, Melbourne, regional New South Wales, and Japan — investigating the dialogue between built environments and natural surroundings.",
+      "This photographic portfolio presents a selection of original images produced across different geographical and cultural contexts. A significant portion focuses on architectural photography captured in São Paulo — exploring the relationship between buildings, structure, scale, and geometry. The compositions emphasize verticality, repetition, and the visual rhythm created by the interaction between architecture and light. Additional work includes photographs from the Brazilian coastline between Bahia and São Paulo, and from Australia — where I lived in Melbourne (Victoria) — extending across regional New South Wales, the West Coast and Japan, investigating the dialogue between built environments and natural surroundings.",
   },
   {
     slug: "projetos",
@@ -37,8 +37,9 @@ export const categories: CategoryConfig[] = [
     slug: "una-macrame",
     title: "Una Macramê",
     subtitle: "Handmade Design",
-    description: "Original macramé pieces and textile art",
+    description:
+      "Handmade macramé pieces and textile art — founded on the North Coast of Brazil, in Barra do Una",
     narrative:
-      "Under the name Una Macramê, original handmade pieces are created blending traditional macramé techniques with contemporary design sensibilities. The work explores texture, rhythm, and form through textile art — each piece reflecting the same attention to structure and composition that guides the architectural and photographic practice.",
+      "The brand was founded on the North Coast of Brazil, in Barra do Una, using natural materials such as driftwood and tree branches collected from the beach and surrounding forest to create artistic panels. The production also incorporates 100% ecological, locally sourced cotton cords from Brazilian suppliers such as Euroroma and São José. Initially, the brand operated from a home-based studio by the beach, establishing partnerships with local coastal shops where pieces such as wall hangings, frames, and decorative items were displayed. A strong focus on sustainability guided the process, ensuring minimal waste by transforming leftover materials into smaller products like keychains, feathers, and pet accessories. After expanding to São Paulo, the brand evolved into the textile segment, introducing clothing and accessories such as bags and skirts. Today, pieces are still exhibited in stores along the North Coast, including Camburi, as well as in private residences and curated spaces.",
   },
 ];

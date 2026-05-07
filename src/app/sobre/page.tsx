@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "About - Iman Abou Tuka",
+  title: "About - Iman Abou Mahmoud",
   description: "Architect, photographer and designer based in Australia",
 };
 
@@ -14,7 +14,7 @@ export default function SobrePage() {
           <div className="overflow-hidden rounded-sm">
             <Image
               src="/sitetuka/images/profile.jpg"
-              alt="Iman Abou Tuka"
+              alt="Iman Abou Mahmoud"
               width={500}
               height={625}
               className="object-cover w-full"
@@ -28,7 +28,7 @@ export default function SobrePage() {
             About
           </p>
           <h1 className="text-3xl md:text-4xl font-light tracking-tight text-[var(--foreground)] mb-2 leading-snug">
-            Iman Abou Tuka
+            Iman Abou Mahmoud
           </h1>
           <p className="text-[var(--accent-light)] mb-8 text-xs tracking-[0.2em] uppercase">
             Architect &middot; Photographer &middot; Designer
@@ -44,8 +44,9 @@ export default function SobrePage() {
             <p>
               Over the years, I have developed work across different geographical
               and cultural contexts — from the dense urban fabric of São Paulo to
-              the coastal landscapes of the North Coast, and through experiences in
-              Melbourne, regional New South Wales, and Japan.
+              the Brazilian coastline between Bahia and São Paulo, and through
+              living in Melbourne (Victoria) and travelling across regional New
+              South Wales, the West Coast of Australia, and Japan.
             </p>
           </div>
         </div>
@@ -66,9 +67,11 @@ export default function SobrePage() {
             the images explore the relationship between buildings, structure, scale,
             and geometry. The compositions emphasize verticality, repetition, and the
             visual rhythm created by the interaction between architecture and light.
-            Additional work includes photographs from the North Coast, Melbourne,
-            regional NSW, and Japan — investigating the dialogue between built
-            environments and natural surroundings.
+            Additional work includes photographs from the Brazilian coast between
+            Bahia and São Paulo, from Melbourne (Victoria) — where I lived — and
+            from regional New South Wales, the West Coast of Australia, and Japan,
+            investigating the dialogue between built environments and natural
+            surroundings.
           </p>
         </div>
         <div>
@@ -101,11 +104,18 @@ export default function SobrePage() {
             Una Macramê
           </h2>
           <p className="text-[var(--muted)] text-sm leading-relaxed">
-            Under the name Una Macramê, I create original handmade pieces that blend
-            traditional macramé techniques with contemporary design sensibilities.
-            The work explores texture, rhythm, and form through textile art — each
-            piece reflecting the same attention to structure and composition that
-            guides my architectural and photographic practice.
+            Una Macramê was founded on the North Coast of Brazil, in Barra do Una,
+            using natural materials such as driftwood and tree branches collected
+            from the beach and surrounding forest to create artistic panels —
+            combined with 100% ecological cotton cords from Brazilian suppliers
+            (Euroroma and São José). What began as a home-based studio by the
+            beach, with partnerships across local coastal shops, evolved after
+            expanding to São Paulo into the textile segment with clothing and
+            accessories such as bags and skirts. Sustainability guides the entire
+            process, transforming leftover materials into smaller products like
+            keychains, feathers, and pet accessories. Today, pieces are exhibited
+            in stores along the North Coast — including Camburi — as well as in
+            private residences and curated spaces.
           </p>
         </div>
       </div>

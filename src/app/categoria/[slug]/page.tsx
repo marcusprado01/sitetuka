@@ -17,7 +17,7 @@ export async function generateMetadata({
   const category = categories.find((c) => c.slug === slug);
   if (!category) return {};
   return {
-    title: `${category.title} - Iman Abou Tuka`,
+    title: `${category.title} - Iman Abou Mahmoud`,
     description: category.description,
   };
 }

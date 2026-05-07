@@ -31,7 +31,7 @@ export function Header() {
           }`}
           onClick={() => setMenuOpen(false)}
         >
-          Iman Abou Tuka
+          Iman Abou Mahmoud
         </Link>
 
         {/* Desktop nav */}

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Contact - Iman Abou Tuka",
-  description: "Get in touch with Iman Abou Tuka",
+  title: "Contact - Iman Abou Mahmoud",
+  description: "Get in touch with Iman Abou Mahmoud",
 };
 
 export default function ContatoPage() {
@@ -24,10 +24,21 @@ export default function ContatoPage() {
             Email
           </p>
           <a
-            href="mailto:contato@tukabou.com.br"
+            href="mailto:iman.aboum@gmail.com"
             className="text-[var(--foreground)] text-lg font-light hover:text-[var(--accent)] transition-colors"
           >
-            contato@tukabou.com.br
+            iman.aboum@gmail.com
+          </a>
+        </div>
+        <div>
+          <p className="text-xs tracking-[0.2em] uppercase text-[var(--accent-light)] mb-2">
+            Phone
+          </p>
+          <a
+            href="tel:+61491960306"
+            className="text-[var(--foreground)] text-lg font-light hover:text-[var(--accent)] transition-colors"
+          >
+            +61 491 960 306
           </a>
         </div>
         <div>
