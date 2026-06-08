@@ -52,11 +52,24 @@ export default async function CategoryPage({
         <h1 className="text-3xl md:text-4xl font-light tracking-tight text-[var(--foreground)] mb-4">
           {category.title}
         </h1>
-        <p className="text-[var(--muted)] text-sm leading-relaxed max-w-2xl mb-3">
-          {category.narrative}
-        </p>
+        <div className="text-[var(--muted)] text-sm leading-relaxed max-w-2xl mb-3 space-y-3">
+          {category.narrative.split("\n\n").map((paragraph, idx) => (
+            <p key={idx}>{paragraph}</p>
+          ))}
+        </div>
+        {category.instagram && (
+          <a
+            href={category.instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 text-xs tracking-[0.2em] uppercase text-[var(--accent)] border-b border-[var(--accent)] pb-1 hover:text-[var(--foreground)] hover:border-[var(--foreground)] transition-colors"
+          >
+            Instagram {category.instagram.handle}
+            <span aria-hidden>&rarr;</span>
+          </a>
+        )}
         {images.length > 0 && (
-          <span className="text-xs text-[var(--accent-light)] tracking-wide">
+          <span className="block text-xs text-[var(--accent-light)] tracking-wide mt-4">
             {images.length} {images.length === 1 ? "image" : "images"}
           </span>
         )}

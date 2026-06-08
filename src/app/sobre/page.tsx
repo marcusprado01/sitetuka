@@ -120,6 +120,28 @@ export default function SobrePage() {
         </div>
       </div>
 
+      {/* Education */}
+      <div className="border-t border-[var(--border)] pt-12 mb-20">
+        <p className="text-xs tracking-[0.25em] uppercase text-[var(--accent)] mb-4">
+          Education
+        </p>
+        <h2 className="text-xl md:text-2xl font-light tracking-tight text-[var(--foreground)] mb-3">
+          Bachelor&apos;s Degree in Architecture and Urbanism
+        </h2>
+        <p className="text-[var(--muted)] text-sm leading-relaxed mb-5 max-w-2xl">
+          Official diploma, translated into English for international purposes.
+        </p>
+        <a
+          href="/sitetuka/diploma.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-[var(--accent)] border-b border-[var(--accent)] pb-1 hover:text-[var(--foreground)] hover:border-[var(--foreground)] transition-colors"
+        >
+          View diploma (PDF)
+          <span aria-hidden>&rarr;</span>
+        </a>
+      </div>
+
       {/* Quote */}
       <div className="border-t border-[var(--border)] pt-12">
         <blockquote className="text-xl md:text-2xl font-light text-[var(--foreground)] italic leading-relaxed max-w-3xl">
