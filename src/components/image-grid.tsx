@@ -6,9 +6,10 @@ import type { ImageFile } from "@/lib/images";
 
 interface ImageGridProps {
   images: ImageFile[];
+  aspectClass?: string;
 }
 
-export function ImageGrid({ images }: ImageGridProps) {
+export function ImageGrid({ images, aspectClass = "aspect-[4/3]" }: ImageGridProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const handlePrev = useCallback(() => {
@@ -53,19 +54,18 @@ export function ImageGrid({ images }: ImageGridProps) {
 
   return (
     <>
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 space-y-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {images.map((image, index) => (
           <button
             key={image.filename}
             onClick={() => setSelectedIndex(index)}
-            className="block w-full overflow-hidden rounded-sm cursor-zoom-in break-inside-avoid group"
+            className={`relative block w-full ${aspectClass} overflow-hidden rounded-sm cursor-zoom-in group`}
           >
             <Image
               src={image.src}
               alt={image.alt}
-              width={800}
-              height={600}
-              className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-[1.02] group-hover:opacity-90"
+              fill
+              className="object-cover transition-all duration-500 group-hover:scale-[1.02] group-hover:opacity-90"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </button>
