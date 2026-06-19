@@ -19,7 +19,7 @@ export default function Home() {
       {/* Hero — Full Screen */}
       <section className="relative min-h-screen h-[100dvh] w-full overflow-hidden">
         <Image
-          src="/sitetuka/images/hero.png"
+          src="/images/hero.png"
           alt="Architecture photography by Iman Abou Mahmoud"
           fill
           className="object-cover"
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="w-full md:w-2/5 flex-shrink-0">
             <div className="overflow-hidden rounded-sm">
               <Image
-                src="/sitetuka/images/profile.jpg"
+                src="/images/profile.jpg"
                 alt="Iman Abou Mahmoud"
                 width={400}
                 height={500}

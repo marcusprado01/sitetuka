@@ -3,7 +3,7 @@ import path from "path";
 
 const IMAGES_DIR = path.join(process.cwd(), "public/images");
 const VALID_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".avif"];
-const BASE_PATH = "/sitetuka";
+const BASE_PATH = "";
 
 export interface ImageFile {
   src: string;

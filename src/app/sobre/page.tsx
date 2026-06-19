@@ -13,7 +13,7 @@ export default function SobrePage() {
         <div className="w-full md:w-2/5 flex-shrink-0">
           <div className="overflow-hidden rounded-sm">
             <Image
-              src="/sitetuka/images/profile.jpg"
+              src="/images/profile.jpg"
               alt="Iman Abou Mahmoud"
               width={500}
               height={625}
@@ -132,7 +132,7 @@ export default function SobrePage() {
           Official diploma, translated into English for international purposes.
         </p>
         <a
-          href="/sitetuka/diploma.pdf"
+          href="/diploma.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-[var(--accent)] border-b border-[var(--accent)] pb-1 hover:text-[var(--foreground)] hover:border-[var(--foreground)] transition-colors"
